@@ -28,6 +28,7 @@ namespace DualQuickSlots.Extensions {
 
 		public static ItemDisplay ShowOffHandItemDisplay(this QuickSlotDisplay quickSlot) {
 			if (ItemDisplays.TryGetValue(quickSlot, out ItemDisplay itemDisplay)) {
+				itemDisplay.Show();
 				return itemDisplay;
 			}
 			itemDisplay = Object.Instantiate(UIUtilities.ItemDisplayPrefab, quickSlot.transform);
