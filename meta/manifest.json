@@ -1,7 +1,7 @@
 {
     "name": "DualQuickSlots",
     "author": "Faeryn",
-    "version_number": "0.5.0",
+    "version_number": "1.0.0",
     "website_url": "https://github.com/Faeryn/Outward_DualQuickSlots",
     "description": "Adds the ability to bind off-hand items (shield, dagger, pistol, lexicon, etc) to quickslots with one-handed weapons such as maces, swords and axes so they get equipped together. Just assign an off-hand item to a quickslot with an 1h weapon to bind them.",
     "dependencies": [
