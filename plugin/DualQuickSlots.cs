@@ -1,8 +1,10 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
+using SideLoader;
 
 namespace DualQuickSlots {
+	[BepInDependency(SL.GUID, BepInDependency.DependencyFlags.HardDependency)]
 	[BepInPlugin(GUID, NAME, VERSION)]
 	public class DualQuickSlots : BaseUnityPlugin {
 		public const string GUID = "faeryn.dualquickslots";

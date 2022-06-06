@@ -14,6 +14,8 @@ namespace DualQuickSlots.Extensions {
 				ItemDisplay itemDisplay = quickSlot.ShowOffHandItemDisplay();
 				if (quickSlot.m_refQuickSlot.TryGetOffHandItem(out Item item)) {
 					itemDisplay.SetReferencedItem(item);
+				} else {
+					itemDisplay.Clear();
 				}
 			} else {
 				quickSlot.HideOffHandItemDisplay();
