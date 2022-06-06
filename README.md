@@ -10,6 +10,7 @@ Just assign an off-hand item to a quickslot where an one-handed item is present 
 - Possibly better UI
 - Better icon
 - Controller support (it might work as it is, untested)
+- Mixed Grip compatibility
 
 ## What to do when the mod doesn't work as intended?
 There is a slight chance that the mod may break (and break your game) in various exciting ways.
