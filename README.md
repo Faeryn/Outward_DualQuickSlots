@@ -10,7 +10,6 @@ Just assign an off-hand item to a quickslot where an one-handed item is present 
 - Possibly better UI
 - Better icon
 - Controller support (it might work as it is, untested)
-- Mixed Grip compatibility
 
 ## What to do when the mod doesn't work as intended?
 There is a slight chance that the mod may break (and break your game) in various exciting ways.
@@ -21,6 +20,9 @@ If anything untoward happens (or nothing happens, which is also a problem), plea
 I'd love if you also attached a list of mods you are using, and the log from `Outward\Outward_Defed\output_log.txt`.
 
 ## Changelog
+### 1.0.1
+- Compatibility with `Multiple Quickslot Bars` by sinai
+
 ### 1.0.0
 - Off-hand quick slot assignments now persist between saves
 
