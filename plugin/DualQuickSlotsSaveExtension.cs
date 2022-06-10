@@ -4,19 +4,17 @@ using SideLoader.SaveData;
 
 namespace DualQuickSlots {
 	public class DualQuickSlotsSaveExtension : PlayerSaveExtension {
+		// TODO Remove on the next major version change
 
 		public List<(int slotID, string itemUID)> offHandItems = new List<(int, string)>();
 		
 		public override void Save(Character character, bool isWorldHost) {
+			// This is deprecated, we use QuickSlot.ToSaveData patch to save the offhand item
 			offHandItems.Clear();
-			foreach (QuickSlot quickSlot in character.QuickSlotMngr.m_quickSlots) {
-				if (quickSlot.TryGetOffHandItem(out Item offHandItem)) {
-					offHandItems.Add((quickSlot.Index, offHandItem.UID));
-				}
-			}
 		}
 		
 		public override void ApplyLoadedSave(Character character, bool isWorldHost) {
+			// This is here to migrate previous saves to the new save method
 			CharacterQuickSlotManager manager = character.QuickSlotMngr;
 			foreach ((int slotID, string itemUID) slot in offHandItems) {
 				QuickSlot quickSlot = manager.GetQuickSlot(slot.slotID);
