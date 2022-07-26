@@ -6,7 +6,11 @@ namespace DualQuickSlots.Extensions {
 		private static ConditionalWeakTable<QuickSlot, Item> OffHandItems = new ConditionalWeakTable<QuickSlot, Item>();
 
 		public static bool TryGetOffHandItem(this QuickSlot quickSlot, out Item offHandItem) {
-			return OffHandItems.TryGetValue(quickSlot, out offHandItem);
+			bool result =  OffHandItems.TryGetValue(quickSlot, out offHandItem);
+			if (offHandItem == null) {
+				result = false;
+			}
+			return result;
 		}
 
 		public static bool CanHaveOffHandItem(this QuickSlot quickSlot) {
@@ -16,7 +20,9 @@ namespace DualQuickSlots.Extensions {
 		
 		public static void SetOffHandItem(this QuickSlot quickSlot, Item offHandItem) {
 			OffHandItems.Remove(quickSlot);
-			OffHandItems.Add(quickSlot, offHandItem);
+			if (offHandItem != null) {
+				OffHandItems.Add(quickSlot, offHandItem);
+			}
 		}
 
 		public static void RemoveOffHandItem(this QuickSlot quickSlot) {
