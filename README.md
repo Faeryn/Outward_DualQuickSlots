@@ -10,6 +10,7 @@ Just assign an off-hand item to a quickslot where an one-handed item is present 
 - Possibly better UI
 - Better icon
 - Controller support (it might work as it is, untested)
+- Darken the off-hand item icon when the item is not in the inventory (similar to quick slots)
 
 ## What to do when the mod doesn't work as intended?
 There is a slight chance that the mod may break (and break your game) in various exciting ways.
@@ -22,6 +23,7 @@ I'd love if you also attached a list of mods you are using, and the log from `Ou
 ## Changelog
 ### 1.0.2
 - Potential endless loading screen fix on save
+- Fixed non-critical error that was happening when trying to equip an off-hand item that is not in the inventory
 
 ### 1.0.1
 - Compatibility with `Multiple Quickslot Bars` by sinai
