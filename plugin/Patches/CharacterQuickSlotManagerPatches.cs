@@ -10,7 +10,6 @@ namespace DualQuickSlots.Patches {
 			QuickSlot quickSlot = __instance.GetQuickSlot(_index);
 			if (quickSlot.CanHaveOffHandItem() && _item.IsLeftHandEquipment()) {
 				quickSlot.SetOffHandItem(_item);
-				quickSlot.RefreshCallback?.Invoke();
 				return false;
 			} else {
 				quickSlot.RemoveOffHandItem();
