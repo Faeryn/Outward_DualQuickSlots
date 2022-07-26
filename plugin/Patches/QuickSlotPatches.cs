@@ -12,6 +12,10 @@ namespace DualQuickSlots.Patches {
 				return;
 			}
 
+			if (item.OwnerCharacter != __instance.m_owner) {
+				return;
+			}
+			
 			if (__instance.ActiveItem.IsEquipped == item.IsEquipped) {
 				item.EnqueueQuickSlotUse();
 			}
