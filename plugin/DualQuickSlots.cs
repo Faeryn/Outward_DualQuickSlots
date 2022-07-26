@@ -9,7 +9,7 @@ namespace DualQuickSlots {
 	public class DualQuickSlots : BaseUnityPlugin {
 		public const string GUID = "faeryn.dualquickslots";
 		public const string NAME = "DualQuickSlots";
-		public const string VERSION = "1.0.1";
+		public const string VERSION = "1.0.2";
 		internal static ManualLogSource Log;
 
 		internal void Awake() {

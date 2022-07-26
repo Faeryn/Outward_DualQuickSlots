@@ -20,6 +20,9 @@ If anything untoward happens (or nothing happens, which is also a problem), plea
 I'd love if you also attached a list of mods you are using, and the log from `Outward\Outward_Defed\output_log.txt`.
 
 ## Changelog
+### 1.0.2
+- Potential endless loading screen fix on save
+
 ### 1.0.1
 - Compatibility with `Multiple Quickslot Bars` by sinai
 
